@@ -21,7 +21,7 @@ jobs:
       - name: Run tests
         run: |
           echo "Testing the app..."
-          echo "All the tests passed! 🥳🥳🥳
+          echo "All the tests passed! 🥳🥳🥳"
 
       - name: Deploy app
         run: |
