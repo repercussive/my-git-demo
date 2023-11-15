@@ -1,0 +1,30 @@
+name: My First Workflow!
+
+# This workflow will be triggered when someone makes a push to the main branch
+on:
+  push:
+    branches:
+      - main
+  # This allows us to manually trigger the workflow
+  workflow_dispatch:
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+
+      - name: Build application
+        run: echo "Building the app..."
+
+      - name: Run tests
+        run: |
+          echo "Testing the app..."
+          echo "All the tests passed! 🥳🥳🥳
+
+      - name: Deploy app
+        run: |
+          echo "Deploying the app..."
+          ls
+      
